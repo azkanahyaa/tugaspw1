@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>NEXUSPLAY CONSOLE</title>
+    <meta property="og:title" content="NEXUSPLAY CONSOLE" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="./css/home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <form action="./hasil.php" method="post">
+          <div class="home-container1">
+            <div class="home-appbar">
+              <h1 class="home-heading">NEXUSPLAY CONSOLE</h1>
+              <span class="home-text">Formulir sewa konsol</span>
+            </div>
+            <div class="home-input-overview">
+              <div class="text-form-container text-form-root-class-name2">
+                <span class="text-form-label"><span>Tanggal</span></span>
+                <input
+                  name="tanggal"
+                  type="date"
+                  placeholder="Masukkan Nama Pemesan"
+                  class="text-form-textinput input"
+                />
+              </div>
+              <div class="text-form-container text-form-root-class-name2">
+                <span class="text-form-label"><span>Nama Pemesan</span></span>
+                <input
+                name="pelanggan"
+                type="text"
+                placeholder="Masukkan Nama Pemesan"
+                class="text-form-textinput input"
+                />
+              </div>
+              <div class="text-form-container text-form-root-class-name2">
+                <span class="text-form-label"><span>Nama Operator Jaga</span></span>
+                <input
+                  name="operator"
+                  type="text"
+                  placeholder="Masukkan Nama Operator"
+                  class="text-form-textinput input"
+                />
+              </div>
+              <div class="select-container select-root-class-name">
+                <span class="select-label"><span>Paket Bermain</span></span>
+                <select name="paket" id="packet" class="select-select" oninput="renderDetailInput()">
+                </select>
+              </div>
+            </div>
+            <div class="home-input-detail hidden">
+              <div id="console-list" class="home-detail">
+                <span class="home-label">
+                  <span>Pilih Jenis Konsol</span>
+                  <input
+                    name="konsol"
+                    type="hidden"
+                  />
+                  <br />
+                </span>
+                <div class="home-row">
+                  <!-- ############### Console List Rendered Here ############## -->
+                </div>
+              </div>
+              <div id="roomtype-list" class="home-detail1">
+                <span class="home-label1">
+                  <span>Pilih Jenis Ruangan</span>
+                  <input
+                    name="room_type"
+                    type="hidden"
+                  />
+                  <br />
+                </span>
+                <div class="home-row1">
+                  <!-- ############### RoomType List Rendered Here ############## -->
+
+                </div>
+              </div>
+              <div id="location-list" class="home-detail2">
+                <span class="home-label2">
+                  <span>Pilih Nomor Bangku / Ruangan</span>
+                  <input
+                    name="room"
+                    type="hidden"
+                  />
+                  <br />
+                </span>
+                <div class="home-row2">
+                  <div class="tap-item-container disabled">
+                    <span class="tap-item-text"><span>Pilih jenis ruangan sebelum memilih bangku / ruangan</span></span>
+                  </div>
+                </div>
+              </div>
+              <div id="duration" class="home-detail3">
+                <span class="home-label3">
+                  <span>Pilih Durasi Sewa</span>
+                  <input
+                    name="duration"
+                    type="hidden"
+                  />
+                  <br />
+                </span>
+                <div class="home-row3">
+                    <!-- ############### Duration Rendered Here ############## -->
+
+                </div>
+              </div>
+            </div>
+            <div class="home-input-detail hidden">
+              <div id="snack-list" class="home-detail">
+                <span class="home-label">
+                  <span>Pilih Tambahan Snack</span>
+                  <input
+                    name="snack"
+                    type="hidden"
+                    optional
+                  />
+                  <br />
+                </span>
+                <div class="home-row">
+                  <!-- ############### Snack Rendered Here ############## -->
+                </div>
+              </div>
+            </div>
+            <div class="button-container">
+              <button type="submit" disabled="true" class="form-button"><span>SIMPAN</span></button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./home.js" type="module"></script>
+  </body>
+</html>

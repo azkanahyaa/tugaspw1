@@ -1,0 +1,132 @@
+[
+    {
+        "code": "ECO",
+        "name": "Economy (Publik)",
+        "locations": [
+            {
+                "available": false,
+                "code": "A1"
+            },
+            {
+                "available": true,
+                "code": "A2"
+            },
+            {
+                "available": true,
+                "code": "A3"
+            },
+            {
+                "available": true,
+                "code": "A4"
+            },
+            {
+                "available": true,
+                "code": "A5"
+            },
+            {
+                "available": true,
+                "code": "A6"
+            },
+            {
+                "available": true,
+                "code": "A7"
+            },
+            {
+                "available": true,
+                "code": "A8"
+            },
+            {
+                "available": true,
+                "code": "B1"
+            },
+            {
+                "available": true,
+                "code": "B2"
+            },
+            {
+                "available": true,
+                "code": "B3"
+            },
+            {
+                "available": true,
+                "code": "B4"
+            },
+            {
+                "available": false,
+                "code": "B5"
+            },
+            {
+                "available": false,
+                "code": "B6"
+            },
+            {
+                "available": true,
+                "code": "B7"
+            },
+            {
+                "available": false,
+                "code": "B8"
+            }
+        ]
+    },
+    {
+        "code": "BSN",
+        "name": "Bisnis",
+        "locations": [
+            {
+                "available": true,
+                "code": "C1"
+            },
+            {
+                "available": true,
+                "code": "C2"
+            },
+            {
+                "available": false,
+                "code": "C3"
+            },
+            {
+                "available": true,
+                "code": "C4"
+            },
+            {
+                "available": true,
+                "code": "D1"
+            },
+            {
+                "available": true,
+                "code": "D2"
+            },
+            {
+                "available": true,
+                "code": "D3"
+            },
+            {
+                "available": false,
+                "code": "D4"
+            }
+        ]
+    },
+    {
+        "code": "VVIP",
+        "name": "VVIP",
+        "locations": [
+            {
+                "available": false,
+                "code": "E1"
+            },
+            {
+                "available": true,
+                "code": "E2"
+            },
+            {
+                "available": true,
+                "code": "F1"
+            },
+            {
+                "available": false,
+                "code": "F2"
+            }
+        ]
+    }
+]
